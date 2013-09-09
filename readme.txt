@@ -31,11 +31,13 @@ Please read [documentation](https://bitbucket.org/holyfield/wp-autoloader/wiki) 
 
 == Screenshots ==
 
-1. /assets/screenshot.jpg
+1. ../assets/screenshot.jpg
 
 == Changelog ==
 
-
+* 2.0.6
+** Minot Additions
+** Minor Fixes
 
 == Upgrade notice ==
 
