@@ -35,13 +35,14 @@ Please read [documentation](https://bitbucket.org/holyfield/wp-autoloader/wiki) 
 
 == Changelog ==
 
-* 2.0.6
-** Minot Additions
-** Minor Fixes
+= 2.0.5 =
+* Minor additions
+* Minor fixes
 
 == Upgrade notice ==
 
-
+= 2.0.5 =
+* Backward compatible
 
 == How to use ==
 
