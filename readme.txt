@@ -20,9 +20,9 @@ The great advantage of automatically loaded classes is also perfomance increase,
 
 == Installation ==
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place your class files into /lib folder in your templates and plugins
+1. Upload `wp-autoloader` folder to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Place your class files into /lib folder in your templates and plugins
 
 == Frequently asked questions ==
 
@@ -31,7 +31,7 @@ Please read [documentation](https://bitbucket.org/holyfield/wp-autoloader/wiki) 
 
 == Screenshots ==
 
-1. `/assets/screenshot.jpg
+1. Information Panel (Menu -> Tools -> Autoloader)
 
 == Changelog ==
 
