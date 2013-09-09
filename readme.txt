@@ -31,7 +31,7 @@ Please read [documentation](https://bitbucket.org/holyfield/wp-autoloader/wiki) 
 
 == Screenshots ==
 
-1. Information Panel
+1. Information Panel (Menu -> Tools -> Autoloader)
 
 == Changelog ==
 
