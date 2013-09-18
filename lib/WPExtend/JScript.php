@@ -38,7 +38,7 @@ class JScript {
 
 
 	/**
-	 * Parses given comman separated string into an array
+	 * Parses given comma separated string into an array
 	 *
 	 * @param string $string        	
 	 * @return array string
