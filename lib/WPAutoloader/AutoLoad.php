@@ -1,5 +1,4 @@
 <?php
-
 namespace WPAutoloader;
 
 /**
@@ -38,7 +37,7 @@ if ( !function_exists( 'is_plugin_inactive' ) ) {
  * Autoloader, this is no longer necessary.
  *
  * @author Dave A. Holyfield
- * @version 2.0.5
+ * @version 2.0.6
  */
 final class AutoLoad extends \WPAutoloader\Abstracts\Plugin {
 	/**
@@ -46,13 +45,13 @@ final class AutoLoad extends \WPAutoloader\Abstracts\Plugin {
 	 *
 	 * @var array
 	 */
-	protected static $_paths;
+	protected $_paths;
 	/**
 	 * Loaded classes
 	 *
 	 * @var array
 	 */
-	protected static $_classes;
+	protected $_classes;
 	const uri_homepage = 'https://bitbucket.org/holyfield/wp-autoloader/';
 
 	/* (non-PHPdoc)
