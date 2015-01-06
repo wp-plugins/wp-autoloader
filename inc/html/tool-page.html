@@ -1,0 +1,67 @@
+<div class="wrap">
+	<div class="tool-box" style="max-width:750px; margin-top:20px;"> 
+		<!-- Header Image -->
+		<p style="text-align:justify;"><strong>WordPress Autoloader </strong> makes WordPress developers life really easy. This plugin loads automatically PHP class files. Many WordPress developers writing object-oriented applications create one PHP source file per class definition. One of the biggest annoyances is having to write a long list of needed includes at the beginning of each script (one for each class). With <strong>WordPress Autoloader</strong>, this is no longer necessary. </p>
+		<p style="text-align:justify;">If you put all your classes into <strong>/lib</strong> folder on your theme or plugin root directory, then all these classes are loaded automatically. Additionally you can define class search path or your own method to automatically load your classes in case you are trying to use a class/interface which hasn't been defined yet. By using <strong>WordPress Autoloader</strong> the scripting engine is given a last chance to load the class before PHP fails with an error.</p>
+		<p style="text-align:justify;">The great advantage of automatically loaded classes is also performance increase, which means faster loading. Loading unneeded files wastes server resources and increases web-page load time.</p>
+		<p style="text-align:justify;">But wait - that's not all! WP Autoloader provides powerful framework for plugins. WP Auloader can automatically hook your methods width appropriate WordPress <a href="#filters-list">filters</a> and <a href="#actions-list">actions</a>. </p>
+	</div>
+	<div class="tool-box" style="max-width:750px; margin-top:20px;">
+		<h3 class="title">Registered paths</h3>
+		<p>Relative to root path: <span style="font-family: 'Courier New', Courier, monospace; font-size: 11px"><!-- Root Path --></span></p>
+		<div class="premium_loader_paths" style="font-family: 'Courier New', Courier, monospace; font-size: 11px; line-height: 20px; color:#033; background-color:#ECF7FF; padding: 20px;"> 
+			<!-- Direcotories --> 
+		</div>
+		<hr size="1" noshade style="margin-top:30px; margin-bottom:16px;">
+	</div>
+	<div class="tool-box" style="margin-top:30px;">
+		<div style="max-width:750px;">
+			<h3 class="title">Usage instructions</h3>
+			<p style="text-align:justify;">You have several options to get your classes loaded automatically. The best option is to use the <strong>/lib</strong> subfolder on you plugin or theme root path, just put all files inside this directory and all classes are loaded automatically. The second and easiest way is to define search path for your classes. For advanced needs, the second option is to create your own __autoload method and register it.</p>
+			<p>Easiest way to get your classes loaded automatically is to put all classes into <strong>/lib</strong> path under your plugin/theme root folder.: </p>
+			<pre style="font-family: 'Courier New', Courier, monospace; font-size: 11px !important; line-height: 20px !important; color: #033; background-color: #f8f7f8;padding: 10px;">
+/lib
+	/MyClassA.php
+	/MyNameSpace
+		/MyClassB.php
+		/MyClassC.php</pre>
+			<p>On case above, classes MyClassA, MyNameSpace\MyClassB and MyNameSpace\MyClassC are loaded automatically and you don't have to worry about registering classes search path.</p>
+			<h4>Register search path</h4>
+			<p>If your classes library is not located inside /lib, you can register search paths for your classes.</p>
+			<h5>Example 1: </h5>
+			<pre style="font-family: 'Courier New', Courier, monospace; font-size: 11px !important; line-height: 20px !important; color: #033; background-color: #f8f7f8;padding: 10px;">
+wpautoload_register_path ( realpath ( './my_library_path' ) );</pre>
+			<h5>Example 2: </h5>
+			<p>This example uses <em>init.php</em> file which should be placed in your classes root directory, to get valid path to the library. Add code below into init.php and request once <em>init.php</em> file from your theme <em>functions.php</em> or from <em>&lt;custom-plugin&gt;.pp</em> file.</p>
+			<pre style="font-family: 'Courier New', Courier, monospace; font-size: 11px !important; line-height: 20px !important; color: #033; background-color: #f8f7f8;padding: 10px;">wpautoload_register_path ( __FILE__ );</pre>
+			<h4>Register your own autoload function</h4>
+			<p>This option is useful, if your library file tree structure does not support your classes namespaces structure. For first you have to create your own method to handle __autoload request. For second you have to register your custom method by using method <em><strong>wpautoload_register_function</strong></em>.</p>
+			<p>bool <strong>wpautoload_register_function</strong> ([ callable <em>$autoload_function</em> [, bool <em>$throw</em> = true [, bool <em>$prepend</em> = false ]]] )</p>
+			<h5><strong>Exmaples:</strong></h5>
+			<pre style="font-family: 'Courier New', Courier, monospace; font-size: 11px !important; line-height: 20px !important; color: #033; background-color: #f8f7f8;padding: 10px;">
+wpautoload_register_function ( 'MyClass::MyStaticFunction' );
+wpautoload_register_function ( array( 'MyClass', 'MyStaticFunction' ) );
+wpautoload_register_function ( 'MyAutoLoadFuncton' );</pre>
+			<p>&nbsp;</p>
+		</div>
+		<hr size="1" noshade style="margin-top:30px; margin-bottom:16px;">
+	</div>
+	<a id="actions-list"></a>
+	<div class="tool-box" style="max-width:750px; margin-top:20px;">
+		<h3 class="title">Action Hooks</h3>
+		<p>List of <!-- Actions Count --> action hooks supported by WP Autoloader:</p>
+		<div class="premium_loader_paths" style="font-family: 'Courier New', Courier, monospace; font-size: 11px; line-height: 20px; color:#033; background-color:#ECF7FF; padding: 20px;"> 
+			<!-- Actions List --> 
+		</div>
+		<hr size="1" noshade style="margin-top:30px; margin-bottom:16px;">
+	</div>
+	<a id="filters-list"></a>
+	<div class="tool-box" style="max-width:750px; margin-top:20px;">
+		<h3 class="title">Filter Hooks</h3>
+		<p>List of <!-- Filters Count -->  filter hooks supported by WP Autoloader:</p>
+		<div class="premium_loader_paths" style="font-family: 'Courier New', Courier, monospace; font-size: 11px; line-height: 20px; color:#033; background-color:#ECF7FF; padding: 20px;"> 
+			<!-- Filters List --> 
+		</div>
+		<hr size="1" noshade style="margin-top:30px; margin-bottom:16px;">
+	</div>
+</div>
