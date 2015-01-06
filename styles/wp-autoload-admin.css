@@ -1,0 +1,110 @@
+/* @group PHP Info Page */
+#wpbody-content div.center table tbody tr.v td a img {
+	display: none;
+}
+
+#wpbody-content div.center table tbody tr.h td h1 {
+	color: #184267;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 22px;
+}
+
+#wpbody-content div.center table {
+	border-collapse: collapse;
+	width: auto;
+	max-width: 98%;
+	margin-bottom: 24px;
+	min-width: 600px;
+}
+
+#wpbody-content div.center table tbody tr.h th {
+	font-size: 9px;
+	background-color: #e6e6e6;
+	color: #2c6399;
+	text-align: left;
+	padding-left: 12px;
+}
+
+#wpbody-content div.center table tbody tr.h th:first-child {
+	
+}
+
+#wpbody-content div.center table tbody tr td:first-child {
+	width: 10em;
+	padding-right: 24px;
+}
+
+#wpbody-content div.center table tbody tr.h td a img {
+	display: none;
+}
+
+#wpbody-content div.center table tbody tr td {
+	font-size: 10px;
+	vertical-align: top;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom: 1px dotted #b0b0b0;
+	border-top: 1px dotted #b0b0b0;
+	padding-left: 12px;
+}
+
+#wpbody-content div.center table tbody tr td.e {
+	font-weight: bold;
+	color: #214c76;
+	white-space: nowrap;
+	font-size: 10px;
+	text-align: left;
+}
+
+#wpbody-content div.center table tbody tr td.v {
+	padding-right: 12px;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	/* Non standard for webkit */
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+#wpbody-content div.center h2 {
+	padding-left: 14px;
+	padding-bottom: 4px;
+	padding-top: 12px;
+	display: block;
+	border-top: 1px dotted #2b6094;
+	text-transform: uppercase;
+	margin-right: 24px;
+	color: #1e466e;
+}
+
+@media screen and (max-width:480px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width:782px) {
+}
+
+@media screen and (max-width:870px) {
+	#wpbody-content div.center table {
+		min-width: 98%;
+	}
+}
+
+@media screen and (max-width:1100px) and (min-width:782px) {
+	#wpbody-content div.center table {
+		min-width: 600px;
+	}
+}
+
+@media screen and (min-width:1600px) {
+	#wpbody-content div.center table {
+		min-width: 900px;
+	}
+}
+
+/* @end */

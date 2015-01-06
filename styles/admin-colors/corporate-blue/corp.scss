@@ -1,0 +1,25 @@
+$base_color: #2d6399;
+$icon_color: #dbe7ff;
+$highlight_color: #184675;
+$notification_color: #26ddf2;
+$button_color: #2e74aa;
+$text_color: #ffffff;
+$link: #0074a2;
+$link_focus: #2ea2cc;
+$menu_text: #d0dfed;
+$menu_icon: #d0dfed;
+$menu_current_text: #ffffff;
+$menu_current_icon: #ffffff;
+$menu_submenu_focus_text: #ffffff;
+$menu_submenu_current_text: #ffffff;
+$menu_bubble_background: #23aee0;
+$menu_bubble_text: #ffffff;
+$menu_bubble_current_background: #24b8e5;
+$menu_bubble_current_text: #ffffff;
+$menu_collapse_focus_text: #ffffff;
+$menu_collapse_focus_icon: #ffffff;
+$adminbar_avatar_frame: #166daf;
+
+
+@import 'colors.css';
+@import '_admin.scss';
